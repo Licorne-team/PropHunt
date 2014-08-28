@@ -37,6 +37,7 @@ HUNTER_TAUNTS = {
 	"taunts/you_underestimate_the_power.wav",
 	"taunts/hunters/coming_for_you-Heavy.mp3",
 	"taunts/hunters/run_coming_for_you-Heavy.wav",
+	"taunts/hunters/here_i_come-Heavy.wav",
 	"taunts/hunters/yatatata-Heavy.wav"
 }
 
