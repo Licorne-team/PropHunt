@@ -41,13 +41,13 @@ function GM:CheckPlayerDeathRoundEnd()
 	local Teams = GAMEMODE:GetTeamAliveCounts()
 
 	if table.Count(Teams) == 0 then
-		GAMEMODE:RoundEndWithResult(1001, "Draw, everyone loses!")
+		GAMEMODE:RoundEndWithResult(1001, "Egalité, tout le monde a perdu !")
 		return
 	end
 
 	if table.Count(Teams) == 1 then
 		local TeamID = table.GetFirstKey(Teams)
-		GAMEMODE:RoundEndWithResult(TeamID, team.GetName(1).." win!")
+		GAMEMODE:RoundEndWithResult(TeamID, team.GetName(1).." gagne !")
 		return
 	end
 end
@@ -59,7 +59,7 @@ function EntityTakeDamage(ent, dmginfo)
 	if GAMEMODE:InRound() && ent && ent:GetClass() != "ph_prop" && !ent:IsPlayer() && att && att:IsPlayer() && att:Team() == TEAM_HUNTERS && att:Alive() then
 		att:SetHealth(att:Health() - HUNTER_FIRE_PENALTY)
 		if att:Health() <= 0 then
-			MsgAll(att:Name() .. " felt guilty for hurting so many innocent props and committed suicide\n")
+			MsgAll(att:Name() .. " se sent honteux d'avoir blessé autant d'innocents props et se suicide\n")
 			att:Kill()
 		end
 	end
@@ -216,7 +216,7 @@ function GM:RoundTimerEnd()
 		return
 	end
    
-	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Props win!")
+	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Props gagne !")
 end
 
 
@@ -233,7 +233,7 @@ function GM:OnPreRoundStart(num)
 					pl:SetTeam(TEAM_PROPS)
 				end
 				
-				pl:ChatPrint("Teams have been swapped!")
+				pl:ChatPrint("Les équipes ont été échangée !")
 			end
 		end
 	end

@@ -45,7 +45,7 @@ function ENT:OnTakeDamage(dmg)
                         net.Broadcast()
  
        
-                        MsgAll(attacker:Name() .. " found and killed " .. pl:Name() .. "\n")
+                        MsgAll(attacker:Name() .. " a trouvé et tué " .. pl:Name() .. "\n")
                        
                         attacker:AddFrags(1)
                         pl:AddDeaths(1)

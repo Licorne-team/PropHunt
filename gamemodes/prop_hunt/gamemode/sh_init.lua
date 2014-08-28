@@ -22,13 +22,13 @@ GM.Website	= "http://xspacesoft.github.io/PropHunt/"
 
 
 // Help info
-GM.Help = [[Prop Hunt is a twist on the classic backyard game Hide and Seek.
+GM.Help = [[Prop Hunt est un mix du jeux classique de Cache-cache.
 
-As a Prop you have ]]..GetConVar("HUNTER_BLINDLOCK_TIME"):GetInt()..[[ seconds to replicate an existing prop on the map and then find a good hiding spot. Press [E] to replicate the prop you are looking at. Your health is scaled based on the size of the prop you replicate.
+En tant que "Props" vous avez ]]..GetConVar("HUNTER_BLINDLOCK_TIME"):GetInt()..[[ secondes pour vous transformer en "props" (objets) existant sur la map et trouver un endroit pour vous cacher. Appuyez sur [E] pour vous transformer en "props" sur lequel votre regard se porte. Votre vie est basé sur la taille du "props" sur lequel vous vous êtes transformé.
 
-As a Hunter you will be blindfolded for the first ]]..GetConVar("HUNTER_BLINDLOCK_TIME"):GetInt()..[[ seconds of the round while the Props hide. When your blindfold is taken off, you will need to find props controlled by players and kill them. Damaging non-player props will lower your health significantly. However, killing a Prop will increase your health by ]]..GetConVar("HUNTER_KILL_BONUS"):GetInt()..[[ points.
+En tant que "Hunter" votre vue sera inactive durant ]]..GetConVar("HUNTER_BLINDLOCK_TIME"):GetInt()..[[ secondes au début de chaque round pendant que les "Props" tentent de se cacher. Lorsque le temps d'inactivité est terminé, vous devez trouver les "Props" contrôlés par les joueurs et de les tuer. Attaquer des "props" non-joueurs baissera vos points de vie. Cependant, tuer un joueur augementera votre vie de ]]..GetConVar("HUNTER_KILL_BONUS"):GetInt()..[[ points.
 
-Both teams can press [F3] to play a taunt sound.]]
+Les deux équipes peuvent appuyez sur [F3] pour jouer une raillerie sonore.]]
 
 
 // Fretta configuration
@@ -45,7 +45,7 @@ GM.RoundLimit				= ROUNDS_PER_MAP
 GM.RoundLength 				= ROUND_TIME
 GM.RoundPreStartTime		= 0
 GM.SelectModel				= false
-GM.SuicideString			= "couldn't take the pressure and committed suicide."
+GM.SuicideString			= "n'en pouvais plus et s'est suicidé."
 GM.TeamBased 				= true
 
 

@@ -46,9 +46,9 @@ function HUDPaint()
 		local blindlock_time_left = (HUNTER_BLINDLOCK_TIME - (CurTime() - GetGlobalFloat("RoundStartTime", 0))) + 1
 		
 		if blindlock_time_left < 1 && blindlock_time_left > -6 then
-			blindlock_time_left_msg = "Hunters have been released!"
+			blindlock_time_left_msg = "Les Hunters sont libérés !"
 		elseif blindlock_time_left > 0 then
-			blindlock_time_left_msg = "Hunters will be unblinded and released in "..string.ToMinutesSeconds(blindlock_time_left)
+			blindlock_time_left_msg = "Les Hunters vont être libérés dans "..string.ToMinutesSeconds(blindlock_time_left)
 		else
 			blindlock_time_left_msg = nil
 		end

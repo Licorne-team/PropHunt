@@ -61,7 +61,7 @@ function EntityTakeDamage(ent, dmginfo)
 	if GAMEMODE:InRound() && ent && ent:GetClass() != "ph_prop" && !ent:IsPlayer() && att && att:IsPlayer() && att:Team() == TEAM_HUNTERS && att:Alive() then
 		att:SetHealth(att:Health() - GetConVar("HUNTER_FIRE_PENALTY"):GetInt())
 		if att:Health() <= 0 then
-			MsgAll(att:Name() .. " felt guilty for hurting so many innocent props and committed suicide\n")
+			MsgAll(att:Name() .. " se sent honteux d'avoir blessé autant d'innocents props et se suicide\n")
 			att:Kill()
 		end
 	end
@@ -218,7 +218,7 @@ function GM:RoundTimerEnd()
 		return
 	end
    
-	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Props win!")
+	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Props gagne !")
 end
 
 
@@ -235,7 +235,7 @@ function GM:OnPreRoundStart(num)
 					pl:SetTeam(TEAM_PROPS)
 				end
 				
-				pl:ChatPrint("Teams have been swapped!")
+				pl:ChatPrint("Les équipes ont été échangée !")
 			end
 		end
 	end
