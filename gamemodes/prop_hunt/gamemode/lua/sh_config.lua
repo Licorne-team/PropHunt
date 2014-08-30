@@ -34,7 +34,11 @@ LOSS_SOUNDS = {
 // You need at least 2 files listed here
 HUNTER_TAUNTS = {
 	"taunts/you_dont_know_the_power.wav",
-	"taunts/you_underestimate_the_power.wav"
+	"taunts/you_underestimate_the_power.wav",
+	"taunts/hunters/coming_for_you-Heavy.mp3",
+	"taunts/hunters/run_coming_for_you-Heavy.wav",
+	"taunts/hunters/here_i_come-Heavy.wav",
+	"taunts/hunters/yatatata-Heavy.wav"
 }
 
 
@@ -87,6 +91,10 @@ PROP_TAUNTS = {
 	"taunts/props/33.mp3",
 	"taunts/props/34.mp3",
 	"taunts/props/35.mp3",
+	"taunts/props/not_medicine-Medic.mp3",
+	"taunts/props/ugly-Medic.mp3",
+	"taunts/props/laugh01-Medic.wav",
+	"taunts/props/laugh02-Medic.wav"
 	--"taunts/you_dont_know_the_power.wav",
 	--"taunts/you_underestimate_the_power.wav"
 }

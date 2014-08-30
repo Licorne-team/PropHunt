@@ -47,7 +47,7 @@ function GM:CheckPlayerDeathRoundEnd()
 
 	if table.Count(Teams) == 1 then
 		local TeamID = table.GetFirstKey(Teams)
-		GAMEMODE:RoundEndWithResult(TeamID, team.GetName(1).." gagne !")
+		GAMEMODE:RoundEndWithResult(TeamID, "Les "..team.GetName(1).." gagne !")
 		return
 	end
 end
