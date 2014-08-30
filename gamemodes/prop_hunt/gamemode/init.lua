@@ -43,7 +43,7 @@ function GM:CheckPlayerDeathRoundEnd()
 	local Teams = GAMEMODE:GetTeamAliveCounts()
 
 	if table.Count(Teams) == 0 then
-		GAMEMODE:RoundEndWithResult(1001, "Draw, everyone loses!")
+		GAMEMODE:RoundEndWithResult(1001, "Egalité, tout le monde a perdu !")
 		return
 	end
 
@@ -218,7 +218,7 @@ function GM:RoundTimerEnd()
 		return
 	end
    
-	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Props gagne !")
+	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Les Props gagne !")
 end
 
 

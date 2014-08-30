@@ -216,7 +216,7 @@ function GM:RoundTimerEnd()
 		return
 	end
    
-	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Props gagne !")
+	GAMEMODE:RoundEndWithResult(TEAM_PROPS, "Les Props gagne !")
 end
 
 
